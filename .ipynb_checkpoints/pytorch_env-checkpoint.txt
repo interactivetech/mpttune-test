@@ -1,0 +1,45 @@
+Collecting environment information...
+PyTorch version: 1.13.0+cu116
+Is debug build: False
+CUDA used to build PyTorch: 11.6
+ROCM used to build PyTorch: N/A
+
+OS: Ubuntu 20.04.5 LTS (x86_64)
+GCC version: (Ubuntu 9.4.0-1ubuntu1~20.04.1) 9.4.0
+Clang version: Could not collect
+CMake version: version 3.22.4
+Libc version: glibc-2.31
+
+Python version: 3.8.16 (default, Mar  2 2023, 03:21:46)  [GCC 11.2.0] (64-bit runtime)
+Python platform: Linux-4.18.0-372.9.1.el8.x86_64-x86_64-with-glibc2.17
+Is CUDA available: True
+CUDA runtime version: 11.3.109
+CUDA_MODULE_LOADING set to: LAZY
+GPU models and configuration: 
+GPU 0: NVIDIA A100-SXM4-80GB
+GPU 1: NVIDIA A100-SXM4-80GB
+
+Nvidia driver version: 515.65.01
+cuDNN version: Probably one of the following:
+/usr/lib/x86_64-linux-gnu/libcudnn.so.8.2.0
+/usr/lib/x86_64-linux-gnu/libcudnn_adv_infer.so.8.2.0
+/usr/lib/x86_64-linux-gnu/libcudnn_adv_train.so.8.2.0
+/usr/lib/x86_64-linux-gnu/libcudnn_cnn_infer.so.8.2.0
+/usr/lib/x86_64-linux-gnu/libcudnn_cnn_train.so.8.2.0
+/usr/lib/x86_64-linux-gnu/libcudnn_ops_infer.so.8.2.0
+/usr/lib/x86_64-linux-gnu/libcudnn_ops_train.so.8.2.0
+HIP runtime version: N/A
+MIOpen runtime version: N/A
+Is XNNPACK available: True
+
+Versions of relevant libraries:
+[pip3] numpy==1.24.3
+[pip3] torch==1.13.0+cu116
+[pip3] torch-tb-profiler==0.4.1
+[pip3] torchaudio==0.13.0+cu116
+[pip3] torchvision==0.14.0+cu116
+[conda] numpy                     1.24.3                   pypi_0    pypi
+[conda] torch                     1.12.0+cu113             pypi_0    pypi
+[conda] torch-tb-profiler         0.4.1                    pypi_0    pypi
+[conda] torchaudio                0.12.0+cu113             pypi_0    pypi
+[conda] torchvision               0.13.0+cu113             pypi_0    pypi
