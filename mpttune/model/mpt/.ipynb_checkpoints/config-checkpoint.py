@@ -8,6 +8,32 @@ class MPT7B8bitConfig:
     attn_impl = 'torch'
     device_map = "auto"
 
+class MPT70BConfig:
+    '''
+        model:
+      name: mpt_causal_lm
+      init_device: meta
+      d_model: 8192
+      n_heads: 64
+      n_layers: 80
+      expansion_ratio: 4
+      max_seq_len: ${max_seq_len}
+      vocab_size: 50368
+      attn_config:
+        attn_impl: triton
+    '''
+    name = 'mpt-70b'
+    hf_config_name = None
+    hf_tokenizer_config = "EleutherAI/gpt-neox-20b"
+    bits = 16
+    d_model=8192
+    n_heads=64
+    n_layers=80
+    groupsize = None
+    max_seq_len = 2048
+    expansion_ratio=4
+    attn_impl = 'torch'
+    device_map = "auto"
 
 class MPT7BInstruct8bitConfig:
     name = 'mpt-7b-instruct'
