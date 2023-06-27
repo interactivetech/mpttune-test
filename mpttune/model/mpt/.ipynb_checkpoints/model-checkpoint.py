@@ -987,7 +987,7 @@ def load_model(llm_config, checkpoint, half=False, backend='triton'):
         )
 
         model.loaded_in_4bit = True
-
+    
     elif llm_config.bits == 8:
         model = MPTForCausalLM.from_pretrained(
             checkpoint,
@@ -998,10 +998,26 @@ def load_model(llm_config, checkpoint, half=False, backend='triton'):
         model.loaded_in_8bit = True
 
     else:
+        '''
+        model:
+          name: mpt_causal_lm
+          init_device: meta
+          d_model: 8192
+          n_heads: 64
+          n_layers: 80
+          expansion_ratio: 4
+          max_seq_len: ${max_seq_len}
+          vocab_size: 50368
+          attn_config:
+            attn_impl: triton
+        '''
+        CACHE_DIR='/cstor/mendeza/hf_test/mpt-7b2'
+        print("Cache DIR: {}".format(CACHE_DIR))
         model = MPTForCausalLM.from_pretrained(
             checkpoint,
             config=config,
-            torch_dtype=torch.bfloat16
+            torch_dtype=torch.bfloat16,
+            cache_dir=CACHE_DIR
         )
         model.loaded_in_bf16 = True
 

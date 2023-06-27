@@ -1,7 +1,7 @@
 python mpttune/run.py finetune  \
   --model=mpt-7b  \
   --weights=mosaicml/mpt-7b  \
-  --dataset=./alpaca_data_cleaned.json  \
+  --dataset=./notebooks/stanford_alpaca/new_tasks/regen.json  \
   --data_type=alpaca  \
   --lora_out_dir=./mpt-7b-alpaca/  \
   --mbatch_size=1  \

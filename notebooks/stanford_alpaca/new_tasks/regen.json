@@ -1,316 +1,514 @@
 [
     {
-        "instruction": "Can you generate a report of our company's sales for the last quarter?",
+        "instruction": "I want to sign up for a contest. What steps do I need to take?",
         "input": "",
-        "output": "I can generate a report of your company's sales for the last quarter, including total sales, average sales per product, and sales per region. Please let me know if there is any additional information you would like to include in the report.",
+        "output": "To sign up for a contest, first check the eligibility requirements to make sure you qualify. Then go to the contest website and follow the instructions provided to create an account or log in to an existing one. Finally, submit your entry by the deadline specified by the contest organizers.",
         "most_similar_instructions": {
-            "Can you explain your refund policy?": 0.2,
-            "I need to modify my order. How can I do that?": 0.08,
-            "My package hasn't arrived yet. What should I do?": 0.0,
-            "How do I change my password?": 0.0,
-            "I'm having trouble connecting to my Wi-Fi network. What should I do?": 0.0,
+            "I'm having trouble connecting to my Wi-Fi network. What should I do?": 0.2758620689655172,
+            "I need to modify my order. How can I do that?": 0.23076923076923075,
+            "How do I change my password?": 0.19047619047619044,
+            "My package hasn't arrived yet. What should I do?": 0.16,
+            "What are some vegetarian dinner options with high protein content?": 0.08,
+            "Can you explain your refund policy?": 0.0
+        },
+        "avg_similarity_score": 0.15618458170182306
+    },
+    {
+        "instruction": "Where can I find information about the newest version of Windows 10?",
+        "input": "",
+        "output": "You can find information about the newest version of Windows 10 on Microsoft's website. It includes detailed information about the features and improvements in the latest version, as well as instructions for upgrading your system to take advantage of them.",
+        "most_similar_instructions": {
+            "I need to modify my order. How can I do that?": 0.17391304347826086,
+            "How do I change my password?": 0.1111111111111111,
+            "Can you explain your refund policy?": 0.1111111111111111,
+            "My package hasn't arrived yet. What should I do?": 0.0909090909090909,
+            "I'm having trouble connecting to my Wi-Fi network. What should I do?": 0.07692307692307691,
+            "I want to sign up for a contest. What steps do I need to take?": 0.07407407407407407,
             "What are some vegetarian dinner options with high protein content?": 0.0
         },
-        "avg_similarity_score": 0.04666666666666667
+        "avg_similarity_score": 0.09114878680096071
     },
     {
-        "instruction": "How can I make sure my password is secure?",
+        "instruction": "Can I book a hotel using my phone?",
         "input": "",
-        "output": "To ensure your password is secure, make sure it is at least 8 characters long and includes a mix of numbers, uppercase and lowercase letters, and special characters. You should also avoid using words or phrases that can be easily guessed, and consider using a password manager to store and keep track of your passwords.",
+        "output": "Yes, you can book a hotel using your phone. Most hotels have apps available for both Android and iOS devices that allow you to book rooms and access other features. You can also use a web browser to search for and book hotels from the comfort of your device.",
         "most_similar_instructions": {
-            "How do I change my password?": 0.5333333333333333,
-            "I need to modify my order. How can I do that?": 0.3,
-            "I'm having trouble connecting to my Wi-Fi network. What should I do?": 0.17391304347826086,
-            "Can you explain your refund policy?": 0.13333333333333333,
-            "My package hasn't arrived yet. What should I do?": 0.10526315789473685,
-            "Can you generate a report of our company's sales for the last quarter?": 0.08695652173913043,
-            "What are some vegetarian dinner options with high protein content?": 0.0
-        },
-        "avg_similarity_score": 0.19039991282554208
-    },
-    {
-        "instruction": "Can you translate this document from French to English?",
-        "input": "Le lac L\u00e9man est le plus grand lac d'Europe occidentale.",
-        "output": "The Lake Geneva is the largest lake in Western Europe.",
-        "most_similar_instructions": {
-            "Can you explain your refund policy?": 0.26666666666666666,
-            "Can you generate a report of our company's sales for the last quarter?": 0.17391304347826086,
-            "How can I make sure my password is secure?": 0.1111111111111111,
-            "I need to modify my order. How can I do that?": 0.09999999999999999,
-            "I'm having trouble connecting to my Wi-Fi network. What should I do?": 0.08695652173913043,
-            "My package hasn't arrived yet. What should I do?": 0.0,
-            "How do I change my password?": 0.0,
-            "What are some vegetarian dinner options with high protein content?": 0.0
-        },
-        "avg_similarity_score": 0.09233091787439612
-    },
-    {
-        "instruction": "How would you describe the taste of this wine?",
-        "input": "Strawberry-flavored Cabernet Sauvignon",
-        "output": "This Strawberry-flavored Cabernet Sauvignon has a sweet and fruity flavor profile, with notes of ripe strawberries, black currant, cherry, and hints of oak.",
-        "most_similar_instructions": {
-            "Can you translate this document from French to English?": 0.2222222222222222,
-            "Can you generate a report of our company's sales for the last quarter?": 0.17391304347826086,
-            "How do I change my password?": 0.13333333333333333,
-            "Can you explain your refund policy?": 0.13333333333333333,
-            "How can I make sure my password is secure?": 0.1111111111111111,
-            "I need to modify my order. How can I do that?": 0.09999999999999999,
-            "My package hasn't arrived yet. What should I do?": 0.0,
-            "I'm having trouble connecting to my Wi-Fi network. What should I do?": 0.0,
-            "What are some vegetarian dinner options with high protein content?": 0.0
-        },
-        "avg_similarity_score": 0.09710144927536231
-    },
-    {
-        "instruction": "Can you classify this sentence as a positive or negative sentiment?",
-        "input": "This restaurant had terrible service.",
-        "output": "This sentence is classified as a negative sentiment.",
-        "most_similar_instructions": {
-            "Can you translate this document from French to English?": 0.3,
-            "Can you generate a report of our company's sales for the last quarter?": 0.23999999999999996,
-            "Can you explain your refund policy?": 0.23529411764705885,
-            "How would you describe the taste of this wine?": 0.19999999999999998,
-            "How can I make sure my password is secure?": 0.09999999999999999,
-            "I need to modify my order. How can I do that?": 0.09090909090909091,
-            "My package hasn't arrived yet. What should I do?": 0.0,
-            "How do I change my password?": 0.0,
-            "I'm having trouble connecting to my Wi-Fi network. What should I do?": 0.0,
-            "What are some vegetarian dinner options with high protein content?": 0.0
-        },
-        "avg_similarity_score": 0.11662032085561498
-    },
-    {
-        "instruction": "Can you generate a list of creative ideas for a project?",
-        "input": "",
-        "output": "I can generate a list of creative ideas for a project, including creating a web application, writing a script for a play, hosting a virtual event, creating a blog, and organizing a community service project.",
-        "most_similar_instructions": {
-            "Can you generate a report of our company's sales for the last quarter?": 0.4799999999999999,
-            "Can you classify this sentence as a positive or negative sentiment?": 0.2727272727272727,
-            "Can you explain your refund policy?": 0.23529411764705885,
-            "How would you describe the taste of this wine?": 0.19999999999999998,
-            "Can you translate this document from French to English?": 0.19999999999999998,
-            "How can I make sure my password is secure?": 0.09999999999999999,
-            "I need to modify my order. How can I do that?": 0.09090909090909091,
-            "My package hasn't arrived yet. What should I do?": 0.0,
-            "How do I change my password?": 0.0,
-            "I'm having trouble connecting to my Wi-Fi network. What should I do?": 0.0
-        },
-        "avg_similarity_score": 0.1435391346621293
-    },
-    {
-        "instruction": "How can I optimize my website for mobile?",
-        "input": "",
-        "output": "You can optimize your website for mobile by designing a responsive layout, ensuring that all content fits on the mobile screen, reducing loading time, using a mobile-friendly navigation menu, and testing your website on different mobile devices.",
-        "most_similar_instructions": {
-            "How can I make sure my password is secure?": 0.47058823529411764,
-            "How do I change my password?": 0.42857142857142855,
-            "I need to modify my order. How can I do that?": 0.3157894736842105,
-            "Can you generate a list of creative ideas for a project?": 0.2105263157894737,
-            "Can you generate a report of our company's sales for the last quarter?": 0.18181818181818182,
-            "I'm having trouble connecting to my Wi-Fi network. What should I do?": 0.18181818181818182,
-            "Can you explain your refund policy?": 0.14285714285714288,
-            "How would you describe the taste of this wine?": 0.11764705882352941,
-            "Can you translate this document from French to English?": 0.11764705882352941,
-            "My package hasn't arrived yet. What should I do?": 0.11111111111111112
-        },
-        "avg_similarity_score": 0.1986364455404703
-    },
-    {
-        "instruction": "How can I improve my public speaking skills?",
-        "input": "",
-        "output": "You can improve your public speaking skills by practicing in front of a mirror, recording yourself, joining a speech or debate club, attending seminars and lectures, and joining a Toastmasters group.",
-        "most_similar_instructions": {
-            "How can I optimize my website for mobile?": 0.5,
-            "How can I make sure my password is secure?": 0.47058823529411764,
-            "How do I change my password?": 0.42857142857142855,
-            "I need to modify my order. How can I do that?": 0.3157894736842105,
-            "I'm having trouble connecting to my Wi-Fi network. What should I do?": 0.18181818181818182,
-            "Can you explain your refund policy?": 0.14285714285714288,
-            "How would you describe the taste of this wine?": 0.11764705882352941,
-            "Can you translate this document from French to English?": 0.11764705882352941,
-            "My package hasn't arrived yet. What should I do?": 0.11111111111111112,
-            "Can you generate a list of creative ideas for a project?": 0.10526315789473685
-        },
-        "avg_similarity_score": 0.20672808443706275
-    },
-    {
-        "instruction": "What type of microphone should I buy for podcasts?",
-        "input": "",
-        "output": "For podcasts, you should consider buying a USB condenser microphone as they are easy to use and often offer a better sound quality than other types of microphones. Popular models include the Audio Technica AT2020, the Blue Yeti, and the Rode NT-USB.",
-        "most_similar_instructions": {
-            "My package hasn't arrived yet. What should I do?": 0.3157894736842105,
-            "I'm having trouble connecting to my Wi-Fi network. What should I do?": 0.2608695652173913,
-            "How can I optimize my website for mobile?": 0.23529411764705882,
-            "Can you generate a list of creative ideas for a project?": 0.19999999999999998,
-            "Can you generate a report of our company's sales for the last quarter?": 0.17391304347826086,
-            "How do I change my password?": 0.13333333333333333,
-            "How can I improve my public speaking skills?": 0.11764705882352941,
-            "How would you describe the taste of this wine?": 0.1111111111111111,
-            "How can I make sure my password is secure?": 0.1111111111111111,
-            "What are some vegetarian dinner options with high protein content?": 0.10526315789473685
-        },
-        "avg_similarity_score": 0.1331665694500531
-    },
-    {
-        "instruction": "Can you send me a copy of our company's annual report?",
-        "input": "",
-        "output": "I have attached a copy of our company's annual report for your reference. Please let me know if you have any further questions or need any additional information.",
-        "most_similar_instructions": {
-            "Can you generate a report of our company's sales for the last quarter?": 0.5384615384615384,
-            "Can you generate a list of creative ideas for a project?": 0.34782608695652173,
-            "Can you classify this sentence as a positive or negative sentiment?": 0.2608695652173913,
-            "Can you explain your refund policy?": 0.2222222222222222,
-            "How would you describe the taste of this wine?": 0.1904761904761905,
-            "Can you translate this document from French to English?": 0.1904761904761905,
-            "How can I improve my public speaking skills?": 0.1,
-            "How can I optimize my website for mobile?": 0.1,
-            "What type of microphone should I buy for podcasts?": 0.09523809523809525,
-            "How can I make sure my password is secure?": 0.09523809523809525
-        },
-        "avg_similarity_score": 0.14851763373502505
-    },
-    {
-        "instruction": "How can I track the performance of our social media campaigns?",
-        "input": "",
-        "output": "You can track the performance of your social media campaigns by using analytics tools such as Google Analytics and Hootsuite Insights, which provide real-time insights into user engagement and other metrics.",
-        "most_similar_instructions": {
-            "How can I improve my public speaking skills?": 0.3157894736842105,
-            "How can I optimize my website for mobile?": 0.3157894736842105,
-            "How would you describe the taste of this wine?": 0.3,
-            "How can I make sure my password is secure?": 0.3,
-            "I need to modify my order. How can I do that?": 0.2727272727272727,
-            "Can you send me a copy of our company's annual report?": 0.2608695652173913,
-            "Can you generate a report of our company's sales for the last quarter?": 0.23999999999999996,
-            "How do I change my password?": 0.23529411764705885,
-            "Can you generate a list of creative ideas for a project?": 0.18181818181818182,
-            "Can you explain your refund policy?": 0.11764705882352942
-        },
-        "avg_similarity_score": 0.1878801456093151
-    },
-    {
-        "instruction": "Can you provide a list of user questions for this robotic arm?",
-        "input": "",
-        "output": "I can provide a list of user questions for this robotic arm, including how to set up the arm, how to program it, how to troubleshoot it, how to maintain it, and how to use the safety features.",
-        "most_similar_instructions": {
-            "Can you generate a list of creative ideas for a project?": 0.5217391304347826,
-            "Can you generate a report of our company's sales for the last quarter?": 0.3846153846153846,
-            "Can you send me a copy of our company's annual report?": 0.3333333333333333,
-            "Can you translate this document from French to English?": 0.28571428571428575,
-            "How would you describe the taste of this wine?": 0.28571428571428575,
-            "Can you classify this sentence as a positive or negative sentiment?": 0.2608695652173913,
-            "Can you explain your refund policy?": 0.2222222222222222,
-            "How can I optimize my website for mobile?": 0.2,
-            "What type of microphone should I buy for podcasts?": 0.1904761904761905,
-            "How can I track the performance of our social media campaigns?": 0.17391304347826086
-        },
-        "avg_similarity_score": 0.184752474010786
-    },
-    {
-        "instruction": "How can I create a website with a shopping cart feature?",
-        "input": "",
-        "output": "You can create a website with a shopping cart feature by using an ecommerce platform such as Shopify or Magento. These platforms provide tools for creating an online store, processing payments, and managing inventory.",
-        "most_similar_instructions": {
-            "How can I optimize my website for mobile?": 0.4210526315789474,
-            "How can I improve my public speaking skills?": 0.3157894736842105,
-            "How can I make sure my password is secure?": 0.3,
-            "I need to modify my order. How can I do that?": 0.2727272727272727,
-            "Can you generate a list of creative ideas for a project?": 0.2727272727272727,
-            "How can I track the performance of our social media campaigns?": 0.2727272727272727,
-            "How do I change my password?": 0.23529411764705885,
-            "Can you classify this sentence as a positive or negative sentiment?": 0.18181818181818182,
-            "Can you provide a list of user questions for this robotic arm?": 0.17391304347826086,
-            "Can you send me a copy of our company's annual report?": 0.17391304347826086
-        },
-        "avg_similarity_score": 0.19267141995369214
-    },
-    {
-        "instruction": "How can I optimize our content for SEO?",
-        "input": "",
-        "output": "You can optimize your content for SEO by targeting specific keywords, creating high-quality content, using relevant images and videos, linking to other relevant webpages, and using internal linking within your website.",
-        "most_similar_instructions": {
-            "How can I optimize my website for mobile?": 0.625,
-            "How can I track the performance of our social media campaigns?": 0.4210526315789474,
-            "How can I improve my public speaking skills?": 0.375,
-            "How can I make sure my password is secure?": 0.35294117647058826,
-            "How can I create a website with a shopping cart feature?": 0.3157894736842105,
-            "I need to modify my order. How can I do that?": 0.3157894736842105,
             "How do I change my password?": 0.28571428571428575,
-            "Can you generate a report of our company's sales for the last quarter?": 0.2727272727272727,
-            "What type of microphone should I buy for podcasts?": 0.23529411764705882,
-            "Can you generate a list of creative ideas for a project?": 0.2105263157894737
+            "I need to modify my order. How can I do that?": 0.2105263157894737,
+            "Where can I find information about the newest version of Windows 10?": 0.2,
+            "I'm having trouble connecting to my Wi-Fi network. What should I do?": 0.18181818181818182,
+            "I want to sign up for a contest. What steps do I need to take?": 0.1739130434782609,
+            "Can you explain your refund policy?": 0.14285714285714288,
+            "My package hasn't arrived yet. What should I do?": 0.11111111111111112,
+            "What are some vegetarian dinner options with high protein content?": 0.0
         },
-        "avg_similarity_score": 0.24244107783296318
+        "avg_similarity_score": 0.16324251009605703
     },
     {
-        "instruction": "Can you summarize this article for me?",
-        "input": "The study conducted by researchers at Stanford University found that incorporating certain physical activities into everyday life could lead to improved mental health among individuals.",
-        "output": "This study found that integrating more physical activities into everyday life, such as taking regular walks, could help to improve mental health and wellbeing.",
-        "most_similar_instructions": {
-            "Can you translate this document from French to English?": 0.375,
-            "Can you classify this sentence as a positive or negative sentiment?": 0.33333333333333326,
-            "Can you generate a list of creative ideas for a project?": 0.33333333333333326,
-            "Can you provide a list of user questions for this robotic arm?": 0.3157894736842105,
-            "Can you send me a copy of our company's annual report?": 0.3157894736842105,
-            "Can you explain your refund policy?": 0.30769230769230765,
-            "Can you generate a report of our company's sales for the last quarter?": 0.2857142857142857,
-            "How can I optimize our content for SEO?": 0.26666666666666666,
-            "How can I optimize my website for mobile?": 0.26666666666666666,
-            "How would you describe the taste of this wine?": 0.25
-        },
-        "avg_similarity_score": 0.18833261037208407
-    },
-    {
-        "instruction": "Can you create a logo for our company?",
+        "instruction": "What is the difference between regular sugar and brown sugar?",
         "input": "",
-        "output": "I can create a logo for your company. Please provide me with details such as the company name, a description of your company, and any specific design ideas you may have.",
+        "output": "Brown sugar is made by combining regular granulated sugar with a natural molasses syrup. The molasses adds flavor, color, and moisture to the sugar, which makes it slightly softer and stickier than regular granulated sugar. Brown sugar also has more minerals than regular sugar because of the natural molasses syrup.",
         "most_similar_instructions": {
-            "Can you send me a copy of our company's annual report?": 0.5,
-            "Can you generate a report of our company's sales for the last quarter?": 0.45454545454545453,
-            "Can you generate a list of creative ideas for a project?": 0.4210526315789474,
-            "Can you provide a list of user questions for this robotic arm?": 0.4,
-            "Can you summarize this article for me?": 0.39999999999999997,
-            "Can you classify this sentence as a positive or negative sentiment?": 0.3157894736842105,
-            "How can I create a website with a shopping cart feature?": 0.3157894736842105,
-            "Can you explain your refund policy?": 0.28571428571428575,
-            "How can I optimize my website for mobile?": 0.25,
-            "How can I optimize our content for SEO?": 0.25
+            "My package hasn't arrived yet. What should I do?": 0.10000000000000002,
+            "What are some vegetarian dinner options with high protein content?": 0.10000000000000002,
+            "Where can I find information about the newest version of Windows 10?": 0.0909090909090909,
+            "I'm having trouble connecting to my Wi-Fi network. What should I do?": 0.08333333333333333,
+            "I want to sign up for a contest. What steps do I need to take?": 0.08,
+            "Can I book a hotel using my phone?": 0.0,
+            "I need to modify my order. How can I do that?": 0.0,
+            "How do I change my password?": 0.0,
+            "Can you explain your refund policy?": 0.0
         },
-        "avg_similarity_score": 0.22009124223852222
+        "avg_similarity_score": 0.05047138047138047
     },
     {
-        "instruction": "What is the capital of Indonesia?",
+        "instruction": "What is the best way to store fresh vegetables for long-term use?",
         "input": "",
-        "output": "The capital of Indonesia is Jakarta. It is located on the northwest coast of Java island. Jakarta is the most populous city in Indonesia and one of the most populous cities in the world.",
+        "output": "The best way to store fresh vegetables for long-term use is to keep them in a cool, dark place with plenty of air circulation, such as a basement, cellar, or garage. If possible, place the vegetables in a breathable container such as a mesh bag or basket, and make sure to remove any moisture from the container before storing it.",
         "most_similar_instructions": {
-            "What type of microphone should I buy for podcasts?": 0.26666666666666666,
-            "How would you describe the taste of this wine?": 0.26666666666666666,
-            "How can I track the performance of our social media campaigns?": 0.23529411764705885,
-            "How can I make sure my password is secure?": 0.13333333333333333,
-            "What are some vegetarian dinner options with high protein content?": 0.125,
-            "My package hasn't arrived yet. What should I do?": 0.125,
-            "Can you generate a list of creative ideas for a project?": 0.11764705882352942,
-            "Can you provide a list of user questions for this robotic arm?": 0.1111111111111111,
-            "Can you send me a copy of our company's annual report?": 0.1111111111111111,
-            "I'm having trouble connecting to my Wi-Fi network. What should I do?": 0.1
+            "What is the difference between regular sugar and brown sugar?": 0.2608695652173913,
+            "I want to sign up for a contest. What steps do I need to take?": 0.14285714285714288,
+            "My package hasn't arrived yet. What should I do?": 0.08695652173913043,
+            "What are some vegetarian dinner options with high protein content?": 0.08695652173913043,
+            "I need to modify my order. How can I do that?": 0.08333333333333334,
+            "Where can I find information about the newest version of Windows 10?": 0.08,
+            "I'm having trouble connecting to my Wi-Fi network. What should I do?": 0.07407407407407408,
+            "Can I book a hotel using my phone?": 0.0,
+            "How do I change my password?": 0.0,
+            "Can you explain your refund policy?": 0.0
         },
-        "avg_similarity_score": 0.07690136660724897
+        "avg_similarity_score": 0.08150471589602024
     },
     {
-        "instruction": "I want to write a story.",
-        "input": "A small dog named Spot was walking through the park on a sunny day.",
-        "output": "The park was bustling with activity, from children playing on the swings and slides to couples taking leisurely strolls through the paths. Spot trotted about mindfully, absorbing all the pleasant sights, smells, and sounds the park had to offer. Every few steps or so, he would pause and gaze in wonder at a butterfly flitting about the flowerbeds or a squirrel scurrying up a tree. As he continued on his journey, he felt a sense of contentment swell up inside, making his tail wag with joy. After a while, he decided it was time to head home and enjoy the rest of his day. As he headed back towards the exit, he looked back and smiled, knowing he'd be back soon. \n \u00a7\u00a7ARY \n6. Instruction: Calculate the sum of the numbers 3 and 7\n6. Input:\n<noinput>\n6. Output:\nThe sum of 3 and 7 is 10.",
+        "instruction": "I am trying to create a budget but I do not know where to start.",
+        "input": "",
+        "output": "To create a budget, start by gathering all your financial information, such as your income, expenses, debts, and savings. Then, set a goal for how much you'd like to save each month. Next, track your spending for a month to get an idea of where your money is going. Finally, create a budget that outlines how you will allocate your income each month towards living expenses, savings, and debt payments.",
         "most_similar_instructions": {
-            "I need to modify my order. How can I do that?": 0.23529411764705885,
-            "How can I create a website with a shopping cart feature?": 0.23529411764705885,
+            "I want to sign up for a contest. What steps do I need to take?": 0.3333333333333333,
+            "I need to modify my order. How can I do that?": 0.30769230769230765,
+            "I'm having trouble connecting to my Wi-Fi network. What should I do?": 0.2758620689655172,
+            "Can I book a hotel using my phone?": 0.1739130434782609,
+            "My package hasn't arrived yet. What should I do?": 0.16,
+            "How do I change my password?": 0.09523809523809522,
+            "Where can I find information about the newest version of Windows 10?": 0.07407407407407407,
+            "What is the best way to store fresh vegetables for long-term use?": 0.07142857142857144,
+            "What is the difference between regular sugar and brown sugar?": 0.0,
+            "Can you explain your refund policy?": 0.0
+        },
+        "avg_similarity_score": 0.13559468129183272
+    },
+    {
+        "instruction": "What are the benefits of a healthy diet?",
+        "input": "",
+        "output": "The benefits of a healthy diet include increased energy levels, improved mental clarity, better digestion, better mood, improved skin health, a stronger immune system, and reduced risk of disease. Eating a variety of healthy foods can also help you reach and maintain a healthy weight.",
+        "most_similar_instructions": {
+            "What is the difference between regular sugar and brown sugar?": 0.22222222222222224,
+            "What are some vegetarian dinner options with high protein content?": 0.22222222222222224,
+            "Where can I find information about the newest version of Windows 10?": 0.2,
+            "What is the best way to store fresh vegetables for long-term use?": 0.1904761904761905,
+            "Can I book a hotel using my phone?": 0.125,
+            "My package hasn't arrived yet. What should I do?": 0.11111111111111112,
+            "I'm having trouble connecting to my Wi-Fi network. What should I do?": 0.09090909090909091,
+            "I am trying to create a budget but I do not know where to start.": 0.08695652173913045,
+            "I want to sign up for a contest. What steps do I need to take?": 0.08695652173913045,
+            "I need to modify my order. How can I do that?": 0.0
+        },
+        "avg_similarity_score": 0.11132115670159148
+    },
+    {
+        "instruction": "Please generate a headline for a news article about AI.",
+        "input": "",
+        "output": "\"AI on the Rise: How Artificial Intelligence is Changing the Way We Live.\"",
+        "most_similar_instructions": {
+            "I want to sign up for a contest. What steps do I need to take?": 0.16,
+            "What are the benefits of a healthy diet?": 0.11111111111111112,
+            "Can I book a hotel using my phone?": 0.11111111111111112,
+            "Where can I find information about the newest version of Windows 10?": 0.0909090909090909,
+            "What is the best way to store fresh vegetables for long-term use?": 0.08695652173913043,
+            "I am trying to create a budget but I do not know where to start.": 0.08,
+            "What is the difference between regular sugar and brown sugar?": 0.0,
+            "I need to modify my order. How can I do that?": 0.0,
+            "My package hasn't arrived yet. What should I do?": 0.0,
+            "How do I change my password?": 0.0
+        },
+        "avg_similarity_score": 0.04923752575926489
+    },
+    {
+        "instruction": "I am having trouble logging into my account. What can I do?",
+        "input": "",
+        "output": "If you are having trouble logging into your account, first check that you are using the correct username and password. If that does not work, try resetting your password. If you still cannot log in, contact customer support and provide all the necessary information to help them identify your account.",
+        "most_similar_instructions": {
+            "I'm having trouble connecting to my Wi-Fi network. What should I do?": 0.5384615384615384,
+            "I need to modify my order. How can I do that?": 0.43478260869565216,
+            "My package hasn't arrived yet. What should I do?": 0.3636363636363636,
+            "I am trying to create a budget but I do not know where to start.": 0.2962962962962963,
+            "I want to sign up for a contest. What steps do I need to take?": 0.22222222222222224,
+            "How do I change my password?": 0.2222222222222222,
+            "Can I book a hotel using my phone?": 0.2,
+            "Where can I find information about the newest version of Windows 10?": 0.16666666666666666,
+            "Can you explain your refund policy?": 0.1111111111111111,
+            "What are the benefits of a healthy diet?": 0.1
+        },
+        "avg_similarity_score": 0.20837265793787532
+    },
+    {
+        "instruction": "What are the benefits of exercising regularly?",
+        "input": "",
+        "output": "The benefits of exercising regularly include improved heart health, increased energy levels, better sleep quality, improved mental health, weight loss, stronger muscles and bones, and a lower risk of chronic diseases.",
+        "most_similar_instructions": {
+            "What are the benefits of a healthy diet?": 0.6666666666666666,
+            "What is the difference between regular sugar and brown sugar?": 0.23529411764705882,
+            "What are some vegetarian dinner options with high protein content?": 0.23529411764705882,
+            "Where can I find information about the newest version of Windows 10?": 0.2105263157894737,
+            "What is the best way to store fresh vegetables for long-term use?": 0.2,
+            "My package hasn't arrived yet. What should I do?": 0.11764705882352941,
+            "I am having trouble logging into my account. What can I do?": 0.10526315789473685,
+            "I'm having trouble connecting to my Wi-Fi network. What should I do?": 0.09523809523809523,
+            "I want to sign up for a contest. What steps do I need to take?": 0.09090909090909091,
+            "Please generate a headline for a news article about AI.": 0.0
+        },
+        "avg_similarity_score": 0.13045590804104737
+    },
+    {
+        "instruction": "How can I improve my focus?",
+        "input": "",
+        "output": "To improve your focus, try to reduce distractions like background noise and clutter. Then, break down your tasks into smaller, manageable chunks and schedule regular breaks throughout the day. You can also try mindful meditation, which is a great way to relax your mind and clear out any distractions. Finally, make sure to get enough sleep and fuel your body with a balanced diet to help you stay sharp and focused.",
+        "most_similar_instructions": {
+            "How do I change my password?": 0.5,
+            "Can I book a hotel using my phone?": 0.42857142857142855,
+            "I need to modify my order. How can I do that?": 0.3529411764705882,
+            "I am having trouble logging into my account. What can I do?": 0.2222222222222222,
+            "Where can I find information about the newest version of Windows 10?": 0.2222222222222222,
             "I'm having trouble connecting to my Wi-Fi network. What should I do?": 0.2,
-            "How do I change my password?": 0.16666666666666666,
-            "How can I improve my public speaking skills?": 0.14285714285714288,
-            "Can you create a logo for our company?": 0.14285714285714288,
-            "How can I optimize our content for SEO?": 0.14285714285714288,
-            "How can I optimize my website for mobile?": 0.14285714285714288,
-            "How can I make sure my password is secure?": 0.13333333333333333,
-            "Can you translate this document from French to English?": 0.13333333333333333
+            "Can you explain your refund policy?": 0.16666666666666666,
+            "My package hasn't arrived yet. What should I do?": 0.125,
+            "I am trying to create a budget but I do not know where to start.": 0.09523809523809522,
+            "I want to sign up for a contest. What steps do I need to take?": 0.09523809523809522
         },
-        "avg_similarity_score": 0.11342812487313766
+        "avg_similarity_score": 0.1505062441643324
+    },
+    {
+        "instruction": "How do I edit a photo in Photoshop?",
+        "input": "",
+        "output": "To edit a photo in Photoshop, open the image in the program and make sure it is set to the right size and resolution. Then use the various tools available, such as healing, erasing, cropping, and retouching, to make the desired changes. When finished, save your photo to the desired file type and you\u2019re done.",
+        "most_similar_instructions": {
+            "How do I change my password?": 0.42857142857142855,
+            "How can I improve my focus?": 0.28571428571428575,
+            "Can I book a hotel using my phone?": 0.25,
+            "I need to modify my order. How can I do that?": 0.2105263157894737,
+            "I am trying to create a budget but I do not know where to start.": 0.1739130434782609,
+            "I want to sign up for a contest. What steps do I need to take?": 0.1739130434782609,
+            "What are the benefits of a healthy diet?": 0.125,
+            "Please generate a headline for a news article about AI.": 0.11111111111111112,
+            "My package hasn't arrived yet. What should I do?": 0.11111111111111112,
+            "Where can I find information about the newest version of Windows 10?": 0.1
+        },
+        "avg_similarity_score": 0.12710408412723664
+    },
+    {
+        "instruction": "How do I delete my account?",
+        "input": "",
+        "output": "To delete your account, log in to your account and go to the settings or account management section. Locate the option to delete the account and follow the instructions provided. You may be asked to confirm your request and provide the reason for your request before the account is deleted permanently.",
+        "most_similar_instructions": {
+            "How do I change my password?": 0.6666666666666666,
+            "How can I improve my focus?": 0.5,
+            "How do I edit a photo in Photoshop?": 0.42857142857142855,
+            "I am having trouble logging into my account. What can I do?": 0.3333333333333333,
+            "Can I book a hotel using my phone?": 0.28571428571428575,
+            "I need to modify my order. How can I do that?": 0.23529411764705885,
+            "I'm having trouble connecting to my Wi-Fi network. What should I do?": 0.2,
+            "I want to sign up for a contest. What steps do I need to take?": 0.19047619047619044,
+            "My package hasn't arrived yet. What should I do?": 0.125,
+            "Where can I find information about the newest version of Windows 10?": 0.1111111111111111
+        },
+        "avg_similarity_score": 0.17618917937545386
+    },
+    {
+        "instruction": "Identify the items that cost more than $50.",
+        "input": "iPad: $499; Apple Pencil: $129; MacBook Air: $899",
+        "output": "iPad, MacBook Air",
+        "most_similar_instructions": {
+            "What are the benefits of exercising regularly?": 0.13333333333333333,
+            "What are the benefits of a healthy diet?": 0.125,
+            "What is the difference between regular sugar and brown sugar?": 0.11111111111111112,
+            "I need to modify my order. How can I do that?": 0.10526315789473685,
+            "Where can I find information about the newest version of Windows 10?": 0.1,
+            "What is the best way to store fresh vegetables for long-term use?": 0.09523809523809525,
+            "Can you explain your refund policy?": 0.0,
+            "I'm having trouble connecting to my Wi-Fi network. What should I do?": 0.0,
+            "How do I change my password?": 0.0,
+            "My package hasn't arrived yet. What should I do?": 0.0
+        },
+        "avg_similarity_score": 0.035260299872488236
+    },
+    {
+        "instruction": "Create a list of five things that I should pack for a weekend trip.",
+        "input": "",
+        "output": "A list of five items you should pack for a weekend trip include: clothes, toiletries, a light jacket, snacks, and any entertainment items such as books, puzzles, or a portable game console.",
+        "most_similar_instructions": {
+            "Please generate a headline for a news article about AI.": 0.25,
+            "I am trying to create a budget but I do not know where to start.": 0.20689655172413796,
+            "I want to sign up for a contest. What steps do I need to take?": 0.20689655172413796,
+            "Can I book a hotel using my phone?": 0.18181818181818182,
+            "How do I edit a photo in Photoshop?": 0.18181818181818182,
+            "What are the benefits of a healthy diet?": 0.18181818181818182,
+            "I'm having trouble connecting to my Wi-Fi network. What should I do?": 0.14285714285714285,
+            "How can I improve my focus?": 0.1,
+            "How do I change my password?": 0.1,
+            "How do I delete my account?": 0.1
+        },
+        "avg_similarity_score": 0.11147527695803558
+    },
+    {
+        "instruction": "How do I know if I'm eligible for free shipping?",
+        "input": "",
+        "output": "To be eligible for free shipping, your order must be over a certain amount (which varies depending on the store), and shipped within the specified delivery time frame. Some stores also offer free shipping on select items or for customers who have a store subscription.",
+        "most_similar_instructions": {
+            "How do I delete my account?": 0.3529411764705882,
+            "How do I change my password?": 0.3529411764705882,
+            "How do I edit a photo in Photoshop?": 0.3157894736842105,
+            "How can I improve my focus?": 0.23529411764705885,
+            "I need to modify my order. How can I do that?": 0.18181818181818182,
+            "I am having trouble logging into my account. What can I do?": 0.17391304347826086,
+            "Create a list of five things that I should pack for a weekend trip.": 0.16,
+            "I'm having trouble connecting to my Wi-Fi network. What should I do?": 0.16,
+            "I want to sign up for a contest. What steps do I need to take?": 0.15384615384615383,
+            "I am trying to create a budget but I do not know where to start.": 0.15384615384615383
+        },
+        "avg_similarity_score": 0.12887708003355178
+    },
+    {
+        "instruction": "Describe the process of renting a car.",
+        "input": "",
+        "output": "The process of renting a car typically involves providing proof of identity, booking a car online or in-person at a rental office, presenting the rental agreement and paying the rental fee. Once the rental agreement is accepted, you will be issued with the keys to the car and are free to take the car for the duration of the rental period.",
+        "most_similar_instructions": {
+            "What are the benefits of a healthy diet?": 0.39999999999999997,
+            "What are the benefits of exercising regularly?": 0.2857142857142857,
+            "Where can I find information about the newest version of Windows 10?": 0.2105263157894737,
+            "Create a list of five things that I should pack for a weekend trip.": 0.19047619047619047,
+            "Identify the items that cost more than $50.": 0.13333333333333333,
+            "How do I edit a photo in Photoshop?": 0.13333333333333333,
+            "Can I book a hotel using my phone?": 0.13333333333333333,
+            "Please generate a headline for a news article about AI.": 0.11764705882352941,
+            "What is the difference between regular sugar and brown sugar?": 0.11764705882352941,
+            "What is the best way to store fresh vegetables for long-term use?": 0.1
+        },
+        "avg_similarity_score": 0.09108314052023593
+    },
+    {
+        "instruction": "Convert 3kg to grams.",
+        "input": "",
+        "output": "3kg is equal to 3000 grams.",
+        "most_similar_instructions": {
+            "I need to modify my order. How can I do that?": 0.13333333333333333,
+            "What is the best way to store fresh vegetables for long-term use?": 0.11764705882352941,
+            "I'm having trouble connecting to my Wi-Fi network. What should I do?": 0.11111111111111112,
+            "I am trying to create a budget but I do not know where to start.": 0.10526315789473685,
+            "I want to sign up for a contest. What steps do I need to take?": 0.10526315789473685,
+            "Can you explain your refund policy?": 0.0,
+            "How do I change my password?": 0.0,
+            "My package hasn't arrived yet. What should I do?": 0.0,
+            "Where can I find information about the newest version of Windows 10?": 0.0,
+            "Can I book a hotel using my phone?": 0.0
+        },
+        "avg_similarity_score": 0.024896426915541198
+    },
+    {
+        "instruction": "Classify the given items into categories.",
+        "input": "Apple, Orange, Banana",
+        "output": "Fruits: Apple, Orange, Banana",
+        "most_similar_instructions": {
+            "Identify the items that cost more than $50.": 0.28571428571428575,
+            "What are the benefits of exercising regularly?": 0.15384615384615383,
+            "Describe the process of renting a car.": 0.15384615384615383,
+            "What are the benefits of a healthy diet?": 0.14285714285714288,
+            "What is the difference between regular sugar and brown sugar?": 0.125,
+            "Where can I find information about the newest version of Windows 10?": 0.1111111111111111,
+            "I am having trouble logging into my account. What can I do?": 0.1111111111111111,
+            "What is the best way to store fresh vegetables for long-term use?": 0.10526315789473684,
+            "Convert 3kg to grams.": 0.0,
+            "Can you explain your refund policy?": 0.0
+        },
+        "avg_similarity_score": 0.049531213182528976
+    },
+    {
+        "instruction": "What is the population of France?",
+        "input": "",
+        "output": "As of July 2019, the population of France is approximately 67 million people.",
+        "most_similar_instructions": {
+            "What are the benefits of exercising regularly?": 0.4615384615384615,
+            "What are the benefits of a healthy diet?": 0.42857142857142855,
+            "What is the difference between regular sugar and brown sugar?": 0.37499999999999994,
+            "What is the best way to store fresh vegetables for long-term use?": 0.3157894736842105,
+            "Describe the process of renting a car.": 0.30769230769230765,
+            "Where can I find information about the newest version of Windows 10?": 0.2222222222222222,
+            "Classify the given items into categories.": 0.16666666666666666,
+            "Identify the items that cost more than $50.": 0.14285714285714288,
+            "What are some vegetarian dinner options with high protein content?": 0.125,
+            "My package hasn't arrived yet. What should I do?": 0.125
+        },
+        "avg_similarity_score": 0.12306747638326586
+    },
+    {
+        "instruction": "Generate a quip about cats.",
+        "input": "",
+        "output": "Cats never let you sleep in - they always wake you up at the crack of dawn!",
+        "most_similar_instructions": {
+            "Please generate a headline for a news article about AI.": 0.4,
+            "Describe the process of renting a car.": 0.16666666666666666,
+            "What are the benefits of a healthy diet?": 0.15384615384615385,
+            "How do I edit a photo in Photoshop?": 0.15384615384615385,
+            "Can I book a hotel using my phone?": 0.15384615384615385,
+            "Where can I find information about the newest version of Windows 10?": 0.11764705882352941,
+            "Create a list of five things that I should pack for a weekend trip.": 0.10526315789473682,
+            "I want to sign up for a contest. What steps do I need to take?": 0.1,
+            "I am trying to create a budget but I do not know where to start.": 0.1,
+            "What is the difference between regular sugar and brown sugar?": 0.0
+        },
+        "avg_similarity_score": 0.05581212865089979
+    },
+    {
+        "instruction": "Rearrange the sentences in the given paragraph.",
+        "input": "It was a sunny day in the city. The birds were chirping and the people were bustling.",
+        "output": "The birds were chirping and the people were bustling on a sunny day in the city.",
+        "most_similar_instructions": {
+            "Classify the given items into categories.": 0.30769230769230765,
+            "What is the population of France?": 0.15384615384615383,
+            "Describe the process of renting a car.": 0.14285714285714285,
+            "What are the benefits of exercising regularly?": 0.14285714285714285,
+            "How do I edit a photo in Photoshop?": 0.13333333333333333,
+            "Identify the items that cost more than $50.": 0.13333333333333333,
+            "What are the benefits of a healthy diet?": 0.13333333333333333,
+            "What is the difference between regular sugar and brown sugar?": 0.11764705882352941,
+            "Where can I find information about the newest version of Windows 10?": 0.10526315789473685,
+            "What is the best way to store fresh vegetables for long-term use?": 0.1
+        },
+        "avg_similarity_score": 0.05445048014707457
+    },
+    {
+        "instruction": "Find out what the fastest land animal is.",
+        "input": "",
+        "output": "The fastest land animal is the cheetah, which can reach speeds of up to 75 miles per hour.",
+        "most_similar_instructions": {
+            "What is the population of France?": 0.28571428571428575,
+            "What are the benefits of exercising regularly?": 0.26666666666666666,
+            "What are the benefits of a healthy diet?": 0.25,
+            "What is the difference between regular sugar and brown sugar?": 0.22222222222222224,
+            "Where can I find information about the newest version of Windows 10?": 0.2,
+            "What is the best way to store fresh vegetables for long-term use?": 0.1904761904761905,
+            "Classify the given items into categories.": 0.14285714285714288,
+            "Rearrange the sentences in the given paragraph.": 0.13333333333333333,
+            "Describe the process of renting a car.": 0.13333333333333333,
+            "Identify the items that cost more than $50.": 0.125
+        },
+        "avg_similarity_score": 0.08748896462405778
+    },
+    {
+        "instruction": "Add two numbers together.",
+        "input": "3 and 4",
+        "output": "The sum of 3 and 4 is 7.",
+        "most_similar_instructions": {
+            "Find out what the fastest land animal is.": 0.0,
+            "Please generate a headline for a news article about AI.": 0.0,
+            "Can you explain your refund policy?": 0.0,
+            "I'm having trouble connecting to my Wi-Fi network. What should I do?": 0.0,
+            "How do I change my password?": 0.0,
+            "My package hasn't arrived yet. What should I do?": 0.0,
+            "I need to modify my order. How can I do that?": 0.0,
+            "I want to sign up for a contest. What steps do I need to take?": 0.0,
+            "Where can I find information about the newest version of Windows 10?": 0.0,
+            "Can I book a hotel using my phone?": 0.0
+        },
+        "avg_similarity_score": 0.0
+    },
+    {
+        "instruction": "What is the capital of Brazil?",
+        "input": "",
+        "output": "The capital of Brazil is Bras\u00edlia.",
+        "most_similar_instructions": {
+            "What is the population of France?": 0.6666666666666666,
+            "What are the benefits of exercising regularly?": 0.4615384615384615,
+            "What are the benefits of a healthy diet?": 0.42857142857142855,
+            "What is the difference between regular sugar and brown sugar?": 0.37499999999999994,
+            "What is the best way to store fresh vegetables for long-term use?": 0.3157894736842105,
+            "Describe the process of renting a car.": 0.30769230769230765,
+            "Find out what the fastest land animal is.": 0.28571428571428575,
+            "Where can I find information about the newest version of Windows 10?": 0.2222222222222222,
+            "Classify the given items into categories.": 0.16666666666666666,
+            "Rearrange the sentences in the given paragraph.": 0.15384615384615383
+        },
+        "avg_similarity_score": 0.1394304671936251
+    },
+    {
+        "instruction": "Who invented the light bulb?",
+        "input": "",
+        "output": "The light bulb was invented by Thomas Edison in 1879.",
+        "most_similar_instructions": {
+            "What is the capital of Brazil?": 0.1818181818181818,
+            "What is the population of France?": 0.1818181818181818,
+            "Classify the given items into categories.": 0.1818181818181818,
+            "Describe the process of renting a car.": 0.16666666666666666,
+            "What are the benefits of exercising regularly?": 0.16666666666666666,
+            "Rearrange the sentences in the given paragraph.": 0.16666666666666666,
+            "What are the benefits of a healthy diet?": 0.15384615384615385,
+            "Find out what the fastest land animal is.": 0.15384615384615385,
+            "Identify the items that cost more than $50.": 0.15384615384615385,
+            "What is the difference between regular sugar and brown sugar?": 0.13333333333333333
+        },
+        "avg_similarity_score": 0.06029304871809617
+    },
+    {
+        "instruction": "Rewrite the given sentence using synonyms.",
+        "input": "The cat settled on the couch.",
+        "output": "The feline perched on the sofa.",
+        "most_similar_instructions": {
+            "Classify the given items into categories.": 0.3333333333333333,
+            "Rearrange the sentences in the given paragraph.": 0.30769230769230765,
+            "Who invented the light bulb?": 0.1818181818181818,
+            "What is the population of France?": 0.16666666666666666,
+            "What is the capital of Brazil?": 0.16666666666666666,
+            "Describe the process of renting a car.": 0.15384615384615383,
+            "What are the benefits of exercising regularly?": 0.15384615384615383,
+            "What are the benefits of a healthy diet?": 0.14285714285714288,
+            "Find out what the fastest land animal is.": 0.14285714285714288,
+            "Identify the items that cost more than $50.": 0.14285714285714288
+        },
+        "avg_similarity_score": 0.07427100950949635
+    },
+    {
+        "instruction": "Spell the word 'indigenous'.",
+        "input": "",
+        "output": "The word 'indigenous' is spelled i-n-d-i-g-e-n-o-u-s.",
+        "most_similar_instructions": {
+            "Who invented the light bulb?": 0.22222222222222224,
+            "Rewrite the given sentence using synonyms.": 0.2,
+            "What is the population of France?": 0.2,
+            "What is the capital of Brazil?": 0.2,
+            "Classify the given items into categories.": 0.2,
+            "What are the benefits of exercising regularly?": 0.18181818181818182,
+            "Describe the process of renting a car.": 0.18181818181818182,
+            "Rearrange the sentences in the given paragraph.": 0.18181818181818182,
+            "Identify the items that cost more than $50.": 0.16666666666666666,
+            "Find out what the fastest land animal is.": 0.16666666666666666
+        },
+        "avg_similarity_score": 0.07433881725325577
+    },
+    {
+        "instruction": "Explain why it is important to recycle.",
+        "input": "",
+        "output": "Recycling is an important part of protecting the environment as it reduces the amount of waste sent to landfills and reduces the amount of pollution created by incineration. It also conserves natural resources as recycled materials can be used to produce new products.",
+        "most_similar_instructions": {
+            "What is the best way to store fresh vegetables for long-term use?": 0.2,
+            "Convert 3kg to grams.": 0.18181818181818182,
+            "Can you explain your refund policy?": 0.15384615384615383,
+            "What is the capital of Brazil?": 0.15384615384615383,
+            "What is the population of France?": 0.15384615384615383,
+            "Find out what the fastest land animal is.": 0.13333333333333333,
+            "What is the difference between regular sugar and brown sugar?": 0.11764705882352941,
+            "I need to modify my order. How can I do that?": 0.1111111111111111,
+            "I'm having trouble connecting to my Wi-Fi network. What should I do?": 0.09523809523809523,
+            "I am trying to create a budget but I do not know where to start.": 0.09090909090909091
+        },
+        "avg_similarity_score": 0.04360307128473218
     }
 ]

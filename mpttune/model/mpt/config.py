@@ -1,6 +1,7 @@
 class MPT7B8bitConfig:
     name = 'mpt-7b'
-    hf_config_name = "mosaicml/mpt-7b"
+    # hf_config_name = "mosaicml/mpt-7b"
+    hf_config_name = '/cstor/mendeza/hf_test/mpt-7b'
     hf_tokenizer_config = "EleutherAI/gpt-neox-20b"
     bits = 16
     groupsize = None

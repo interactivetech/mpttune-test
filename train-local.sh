@@ -1,0 +1,20 @@
+export WANDB_MODE=offline 
+python mpttune/run.py finetune  \
+  --model=mpt-7b  \
+  --weights=mosaicml/mpt-7b  \
+  --dataset=./notebooks/stanford_alpaca/new_tasks/regen.json  \
+  --data_type=alpaca  \
+  --lora_out_dir=./mpt-7b-alpaca/  \
+  --mbatch_size=1  \
+  --batch_size=2   \
+  --epochs=3   \
+  --lr=3e-4   \
+  --cutoff_len=256  \
+  --lora_r=8   \
+  --lora_alpha=16  \
+  --lora_dropout=0.05  \
+  --warmup_steps=5  \
+  --save_steps=50   \
+  --save_total_limit=3  \
+  --logging_steps=5  \
+  --target_modules='["Wqkv"]'

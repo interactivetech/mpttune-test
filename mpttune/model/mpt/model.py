@@ -1011,10 +1011,13 @@ def load_model(llm_config, checkpoint, half=False, backend='triton'):
           attn_config:
             attn_impl: triton
         '''
+        CACHE_DIR='/cstor/mendeza/hf_test/mpt-7b2'
+        print("Cache DIR: {}".format(CACHE_DIR))
         model = MPTForCausalLM.from_pretrained(
             checkpoint,
             config=config,
-            torch_dtype=torch.bfloat16
+            torch_dtype=torch.bfloat16,
+            cache_dir=CACHE_DIR
         )
         model.loaded_in_bf16 = True
 
