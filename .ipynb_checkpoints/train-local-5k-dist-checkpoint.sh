@@ -1,8 +1,8 @@
 export WANDB_MODE=offline 
-export WORLD_SIZE=2
-export CUDA_VISIBLE_DEVICES=0,1
+export WORLD_SIZE=8
+export CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
 
-torchrun --nproc_per_node=2 --master_port=1234 mpttune/run.py finetune  \
+torchrun --nproc_per_node=8 mpttune/run.py finetune  \
   --model=mpt-7b  \
   --weights=mosaicml/mpt-7b  \
   --dataset=./alpaca_data_cleaned_5k.json  \

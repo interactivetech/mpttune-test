@@ -101,17 +101,9 @@ def finetune(args):
                 checkpoint_ratio=tune_config.gradient_checkpointing_ratio)
 
         # Disable Trainer's DataParallel for multigpu
-        # print("torch.cuda.device_count(): ",torch.cuda.device_count())
-        # if not tune_config.ddp and torch.cuda.device_count() > 1:
-        #     model.is_parallelizable = True
-        #     model.model_parallel = True
-        # elif not tune_config.ddp:
-        #     model.is_parallelizable = True
-        #     model.model_parallel = True
-        #     print("--model.is_parallelizable: ",model.is_parallelizable)
-        #     print("--model.model_parallel: ",model.model_parallel)
-        # print("model.is_parallelizable: ",model.is_parallelizable)
-        # print("model.model_parallel: ",model.model_parallel)
+        if not tune_config.ddp and torch.cuda.device_count() > 1:
+            model.is_parallelizable = True
+            model.model_parallel = True
         # Count eval count for wandb
         if tune_config.val_set_size > 0:
             eval_count = 10
