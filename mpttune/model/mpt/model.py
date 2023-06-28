@@ -1011,13 +1011,19 @@ def load_model(llm_config, checkpoint, half=False, backend='triton'):
           attn_config:
             attn_impl: triton
         '''
-        CACHE_DIR='/cstor/mendeza/hf_test/mpt-7b2'
+        # CACHE_DIR='/cstor/mendeza/hf_test/mpt-7b2'
+        # CACHE_DIR='/cstor/mendeza/hf_test/mpt-30b2'
+        if llm_config.name == 'mpt-7b':
+            CACHE_DIR='/cstor/mendeza/hf_test/mpt-7b2'
+        elif llm_config.name == 'mpt-30b':
+            CACHE_DIR='/cstor/mendeza/hf_test/mpt-30b2'
         print("Cache DIR: {}".format(CACHE_DIR))
         model = MPTForCausalLM.from_pretrained(
             checkpoint,
             config=config,
             torch_dtype=torch.bfloat16,
-            cache_dir=CACHE_DIR
+            cache_dir=CACHE_DIR,
+            device_map={"": torch.cuda.current_device()}
         )
         model.loaded_in_bf16 = True
 

@@ -1,5 +1,5 @@
 from .mpt.config import (
-    MPT7B8bitConfig, MPT7BChat8bitConfig, MPT7BInstruct8bitConfig, MPT7BStorywriter4BitConfig, MPT7BStorywriter8bitConfig)
+    MPT7B8bitConfig,MPT30B8bitConfig, MPT7BChat8bitConfig, MPT7BInstruct8bitConfig, MPT7BStorywriter4BitConfig, MPT7BStorywriter8bitConfig)
 
 
 MODEL_CONFIGS = {
@@ -8,6 +8,7 @@ MODEL_CONFIGS = {
     MPT7BInstruct8bitConfig.name: MPT7BInstruct8bitConfig,
     MPT7BStorywriter8bitConfig.name: MPT7BStorywriter8bitConfig,
     MPT7BStorywriter4BitConfig.name: MPT7BStorywriter4BitConfig,
+    MPT30B8bitConfig.name: MPT30B8bitConfig,
 }
 
 

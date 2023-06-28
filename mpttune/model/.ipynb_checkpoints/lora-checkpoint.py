@@ -235,12 +235,13 @@ def get_quant_class(framework: str):
     return QuantClass
 
 
-def load_adapter(mpt, lora_apply_dir=None, lora_config=None, ddp=None):
+def load_adapter(mpt, lora_apply_dir=None, lora_config=None, ddp=None,local_rank=-1):
     if lora_apply_dir is None:
         model = get_peft_model(mpt, lora_config)
     else:
         if ddp:
-            device_map = {'': 0}
+            assert local_rank != -1
+            device_map = {'': local_rank}
         else:
             if torch.cuda.device_count() > 1:
                 device_map = "auto"
@@ -250,8 +251,7 @@ def load_adapter(mpt, lora_apply_dir=None, lora_config=None, ddp=None):
         print('Device map for lora:', device_map)
 
         model = PeftModel.from_pretrained(
-            mpt, lora_apply_dir, device_map=device_map,
-            torch_dtype=torch.float32, is_trainable=True)
+            mpt, lora_apply_dir, is_trainable=True)
 
         model.to(mpt.device)
         print(lora_apply_dir, 'loaded')

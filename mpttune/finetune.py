@@ -25,12 +25,14 @@ class FinetuneConfig:
 
         self.world_size = int(os.environ.get("WORLD_SIZE", 1))
         self.local_rank = int(os.environ.get("LOCAL_RANK", self.local_rank))
-        self.ddp = self.world_size != 1
-        self.device_map = "auto" if not self.ddp else {"": torch.cuda.current_device()}
 
+        self.ddp = self.world_size != 1
+        self.device_map = "auto" if not self.ddp else {"": self.local_rank}
+        
         if self.ddp:
             self.gradient_accumulation_steps = self.gradient_accumulation_steps // self.world_size
-
+            print("self.local_rank : ",self.local_rank )
+            torch.cuda.set_device(self.local_rank )
     def __str__(self) -> str:
         s = f"\nParameters:\n{'config':-^20}\n{self.dataset=}\n{self.data_type=}\n{self.lora_out_dir=}\n{self.lora_apply_dir=}" + \
             f"\n{self.weights=}\n{self.target_modules=}\n\n" + \
@@ -74,7 +76,8 @@ def finetune(args):
         llm,
         lora_apply_dir=tune_config.lora_apply_dir,
         lora_config=lora_config,
-        ddp=tune_config.ddp
+        ddp=tune_config.ddp,
+        local_rank=args.local_rank
     )
 
     if getattr(model, 'loaded_in_4bit', False):
@@ -98,10 +101,17 @@ def finetune(args):
                 checkpoint_ratio=tune_config.gradient_checkpointing_ratio)
 
         # Disable Trainer's DataParallel for multigpu
-        if not tune_config.ddp and torch.cuda.device_count() > 1:
-            model.is_parallelizable = True
-            model.model_parallel = True
-
+        # print("torch.cuda.device_count(): ",torch.cuda.device_count())
+        # if not tune_config.ddp and torch.cuda.device_count() > 1:
+        #     model.is_parallelizable = True
+        #     model.model_parallel = True
+        # elif not tune_config.ddp:
+        #     model.is_parallelizable = True
+        #     model.model_parallel = True
+        #     print("--model.is_parallelizable: ",model.is_parallelizable)
+        #     print("--model.model_parallel: ",model.model_parallel)
+        # print("model.is_parallelizable: ",model.is_parallelizable)
+        # print("model.model_parallel: ",model.model_parallel)
         # Count eval count for wandb
         if tune_config.val_set_size > 0:
             eval_count = 10
