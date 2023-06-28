@@ -12,7 +12,7 @@ MODEL_CONFIGS = {
 }
 
 
-def load_model(model_name: str, weights, half=False, backend='triton'):
+def load_model(model_name: str, weights, half=False, backend='triton',inference=False):
     if model_name not in MODEL_CONFIGS:
         raise ValueError(f"Invalid model name: {model_name}")
 
@@ -20,8 +20,10 @@ def load_model(model_name: str, weights, half=False, backend='triton'):
 
     if model_name in MODEL_CONFIGS:
         from .mpt.model import load_model
-        model, tokenizer = load_model(model_config, weights, half=half, backend=backend)
-
+        if inference == False:
+            model, tokenizer = load_model(model_config, weights, half=half, backend=backend,inference=False)
+        elif inference == True:
+            model, tokenizer = load_model(model_config, weights, half=half, backend=backend,inference=True)
     else:
         raise ValueError(f"Invalid model name: {model_name}")
 

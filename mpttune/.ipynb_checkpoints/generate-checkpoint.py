@@ -43,7 +43,8 @@ def generate(args):
     model, tokenizer = load_model(
         args.model,
         args.weights,
-        backend=args.backend)
+        backend=args.backend,
+        inference=True)
 
     if args.lora_apply_dir is not None:
         model = load_adapter(model, lora_apply_dir=args.lora_apply_dir)

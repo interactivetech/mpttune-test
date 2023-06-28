@@ -954,7 +954,7 @@ class MPTForCausalLM(MPTPreTrainedModel):
         return reordered_past
 
 
-def load_model(llm_config, checkpoint, half=False, backend='triton'):
+def load_model(llm_config, checkpoint, half=False, backend='triton',inference=False):
     config = MPTConfig.from_pretrained(llm_config.hf_config_name)
     config.max_seq_len = llm_config.max_seq_len
 
@@ -1018,13 +1018,21 @@ def load_model(llm_config, checkpoint, half=False, backend='triton'):
         elif llm_config.name == 'mpt-30b':
             CACHE_DIR='/cstor/mendeza/hf_test/mpt-30b2'
         print("Cache DIR: {}".format(CACHE_DIR))
-        model = MPTForCausalLM.from_pretrained(
-            checkpoint,
-            config=config,
-            torch_dtype=torch.bfloat16,
-            cache_dir=CACHE_DIR,
-            device_map={"": torch.cuda.current_device()}
-        )
+        if inference==False:
+            model = MPTForCausalLM.from_pretrained(
+                checkpoint,
+                config=config,
+                torch_dtype=torch.bfloat16,
+                cache_dir=CACHE_DIR        
+            )
+        elif inference==True:
+            model = MPTForCausalLM.from_pretrained(
+                checkpoint,
+                config=config,
+                torch_dtype=torch.bfloat16,
+                cache_dir=CACHE_DIR,
+                device_map={"": torch.cuda.current_device()}
+            )
         model.loaded_in_bf16 = True
 
     if config.no_bias:
