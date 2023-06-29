@@ -4,7 +4,7 @@ python mpttune/run.py finetune  \
   --weights=mosaicml/mpt-30b  \
   --dataset=./alpaca_data_cleaned_5k.json  \
   --data_type=alpaca  \
-  --lora_out_dir=./mpt-7b-alpaca2/  \
+  --lora_out_dir=./mpt-30b-alpaca/  \
   --mbatch_size=16  \
   --batch_size=16   \
   --epochs=1   \

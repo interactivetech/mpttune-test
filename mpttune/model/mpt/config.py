@@ -10,8 +10,8 @@ class MPT7B8bitConfig:
     device_map = "auto"
 class MPT30B8bitConfig:
     name = 'mpt-30b'
-    hf_config_name = "mosaicml/mpt-30b"
-    # hf_config_name = '/cstor/mendeza/hf_test/mpt-7b'
+    # hf_config_name = "mosaicml/mpt-30b"
+    hf_config_name = '/cstor/mendeza/hf_test/mpt-30b'
     hf_tokenizer_config = "EleutherAI/gpt-neox-20b"
     bits = 16
     groupsize = None
