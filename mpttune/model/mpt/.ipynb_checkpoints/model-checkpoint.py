@@ -1018,12 +1018,28 @@ def load_model(llm_config, checkpoint, half=False, backend='triton',inference=Fa
         elif llm_config.name == 'mpt-30b':
             CACHE_DIR='/cstor/mendeza/hf_test/mpt-30b2'
         print("Cache DIR: {}".format(CACHE_DIR))
-        if inference==False:
+        if inference==False and llm_config.name == 'mpt-30b':
             model = MPTForCausalLM.from_pretrained(
                 checkpoint,
                 config=config,
+                load_in_8bit=True,
                 torch_dtype=torch.bfloat16,
-                cache_dir=CACHE_DIR        
+                cache_dir=CACHE_DIR,
+                device_map='auto'
+            )
+            for n, m in model.named_modules():
+                if m.__class__.__name__ == 'QuantLinear':
+                    print(f'Converting to half {n}.')
+                    m.scales = m.scales.half()
+                    m.bias = m.bias.half() if (m.bias is not None) else None
+            print('Converted as Half.')
+        elif inference==False and llm_config.name == 'mpt-7b':
+            model = MPTForCausalLM.from_pretrained(
+                checkpoint,
+                load_in_8bit=False,
+                config=config,
+                torch_dtype=torch.bfloat16,
+                cache_dir=CACHE_DIR,
             )
         elif inference==True:
             model = MPTForCausalLM.from_pretrained(

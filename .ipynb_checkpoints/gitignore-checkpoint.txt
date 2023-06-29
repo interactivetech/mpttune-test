@@ -2,6 +2,13 @@ __pycache__
 *.py[cod]
 *$py.class
 
+
+#Folders
+mpt-30b-alpaca/
+mpt-7b-alpaca/
+mpt-7b-alpaca2/
+wandb/
+
 # Distribution / packaging
 .Python build/
 develop-eggs/

@@ -1,14 +1,16 @@
+export WANDB_MODE=offline 
+
 export WORLD_SIZE=8
 export CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
 
-torchrun --nproc_per_node=8 mpttune/run.py finetune  \
+accelerate launch --gpu_ids='all' mpttune/run.py finetune  \
   --model=mpt-30b  \
   --weights=mosaicml/mpt-30b  \
   --dataset=./alpaca_data_cleaned_5k.json  \
   --data_type=alpaca  \
   --lora_out_dir=./mpt-30b-alpaca/  \
-  --mbatch_size=16  \
-  --batch_size=16   \
+  --mbatch_size=1  \
+  --batch_size=8   \
   --epochs=1   \
   --lr=3e-4   \
   --cutoff_len=256  \

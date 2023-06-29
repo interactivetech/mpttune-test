@@ -5,8 +5,8 @@ python mpttune/run.py finetune  \
   --dataset=./alpaca_data_cleaned_5k.json  \
   --data_type=alpaca  \
   --lora_out_dir=./mpt-30b-alpaca/  \
-  --mbatch_size=16  \
-  --batch_size=16   \
+  --mbatch_size=1  \
+  --batch_size=8   \
   --epochs=1   \
   --lr=3e-4   \
   --cutoff_len=256  \

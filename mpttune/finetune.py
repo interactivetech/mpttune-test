@@ -122,7 +122,7 @@ def finetune(args):
             optim="adamw_torch",
             num_train_epochs=tune_config.epochs,
             learning_rate=tune_config.lr,
-            fp16=True,
+            fp16=False,
             logging_steps=tune_config.logging_steps,
             evaluation_strategy="steps" if eval_steps != 0 else "no",
             save_strategy="steps",
